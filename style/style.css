@@ -1,0 +1,338 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    height: auto;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+#intro{
+    background-color: #637573;
+    height: 28vw;
+}
+
+#promotion{
+    top: 9vw;
+    height: 25vw;
+    width: 80vw;
+    position: absolute;
+    left: 10%;
+}
+
+#logointro{
+    padding-top: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15vw;
+}
+
+#buton{
+    bottom: 5vw;
+}
+
+#intro p{
+    color: white;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 140%;
+    margin: 0 25%;
+}
+
+#signature{
+    padding: 5vw;
+}
+
+#signature h2{
+    font-size: 2.25vw;
+    text-align: center;
+    padding-bottom: 3.75vw;
+}
+
+.sign-img{
+    width: 23.75vw;
+    position: relative;
+    top: 4vw; 
+    left: 12.5vw;
+    height: 17.5vw;
+}
+
+.sign-content{
+    display: flex;
+    padding-bottom: 10vw;
+}
+
+.sign-text{
+    margin-left: 2vw;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    height: 20vw;
+    color: white;
+    background-color: #637573;
+    padding: 2.25vw;
+}
+
+.sign-text h3{
+    padding-top: 3vw;
+    padding-left: 12.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 2vw;
+}
+
+.sign-text p{
+    font-weight: 100;
+    font-size: 1.25vw;
+    padding-left: 12.5vw;
+    width: 20vw;
+}
+
+.sign-img{
+    width: 20vw;
+    position: relative;
+    top: 4vw; 
+    left: 12.5vw;
+    height: 17.5vw;
+}
+
+.sign-content1{
+    display: flex;
+    padding-bottom: 10vw;
+}
+
+.text1{
+    margin-bottom: -1vh;
+}
+
+.sign-text1{
+    margin-left: 23vw;
+    display: flex;
+    flex-direction: column;
+    height: 20vw;
+    color: white;
+    background-color: #637573;
+    padding: 2.25vw;
+    width: 33vw;
+}
+
+.sign-text1 h3{
+    padding-top: 5.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 2vw;
+}
+
+.sign-text1 p{
+    font-weight: 100;
+    font-size: 1.25vw;
+    width: 20vw;
+}
+
+.sign-img1{
+    width: 30vw;
+    position: relative;
+    top: 4vw; 
+    right: 10vw;
+    height: 17.5vw;
+}
+
+#signature a{
+    font-weight: lighter;
+    font-size: 1.5vw;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    padding: 1vw 1.5vw;
+    border: 0.15vw solid #637573;
+    transition: 0.2s;
+}
+
+#signature a:hover{
+    color: white;
+    background-color: #637573;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    color: white;
+    text-align: center;
+}
+
+#text h1{
+    font-family: "Brush Script MT", cursive;
+    font-weight: 500;
+    padding-top: 5vw;
+    font-size: 5vw;
+    margin-bottom: 4.5vw;
+}
+
+#text p{
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+}
+
+#btn{
+    background-color: transparent;
+    border: 0.2vw solid white;
+    border-radius: 0.5vw;
+    color: white;
+    padding: 0.75vw 1.6vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1vw;
+    transition: 0.2s;
+}
+
+#btn:hover{
+    background-color: #637573;
+    padding: 0.75vw 1.6vw;
+    border-radius: 0.4vw;
+    border: 0.2vw solid #637573;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+
+#btn-menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.slideshow-container {
+    position: relative;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  .text {
+    color: #f2f2f2;
+    position: absolute;
+    width: 100%;
+    bottom: 15vw;
+    text-align: center;
+  }
+
+  .text h1{
+    text-shadow: 0.2vw 0.2vw black;
+    font-family: "Brush Script MT", cursive;
+    font-size: 5vw;
+  }
+
+  .text p{
+    text-shadow: 0.1vw 0.1vw black;
+      font-size: 1.25vw;
+      margin: 4vw 0;
+  }
+  
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+@media screen and (max-width:800px){
+    .text h1{
+        font-size: 8vw;
+    }
+    .text p{
+        font-size: 2vw;
+    }
+    #btn{
+        font-size: 1.5vw;
+    }
+    #btn:hover{
+        background-color: transparent;
+        padding: 0.75vw 1.6vw;
+        border-radius: 0.4vw;
+        border: 0.2vw solid #ffffff;
+    }
+    #intro{
+        padding-bottom: 5vw;
+        height: auto;
+    }
+    #logointro{
+        height: 18vw;
+    }
+    #intro p{
+        margin: 0 12vw;
+        font-size: 2.5vw;
+    }
+
+    #signature h2{
+        font-size: 5vw;
+        padding-bottom: 10vw;
+    }
+    .sign-text h3{
+        font-size: 2.5vw;
+    }
+    .sign-text p{
+        font-size: 1.75vw;
+    }
+    .sign-text1 h3{
+        font-size: 2.5vw;
+    }
+    .sign-text1 p{
+        font-size: 1.75vw;
+    }
+
+    #signature a{
+        font-size: 2.5vw;
+    }
+
+    
+}

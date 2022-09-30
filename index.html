@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffein Line</title>
+    <link rel="stylesheet" href="./style/headfoot.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/79b4ca60a2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+    <header>
+        <div id="header-content">
+            <nav> 
+                <a href="./index.html"><img id="img-header" src="./assets/Logowithnofont.png" alt=""></a>
+                <ul>
+                    <li><a href="#">Menu <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="./beverage.html">Beverages</a></li>
+                            <li><a href="./dessert.html">Dessert</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+    </div>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="text1 fade">
+          <img src="./assets/slider1.jfif" style="width:100%; height: 45vw;">
+          <div class="text">
+            <h1>Caffein Line</h1>
+            <p>Not just an ordinary Coffee shop, but the one that creates memories.</p>
+            <a href="#intro" id ="btn">Our story</a>
+          </div>
+        </div>
+        
+        <div class="text1 fade">
+            <img src="./assets/slider2tes.jfif" style="width:100%; height: 45vw;filter: blur(5px);"alt="">
+          <img src="./assets/promotion.png" id ="promotion">
+          <div id ="buton" class="text">
+            <a href="#btn-menu" id ="btn">See All Menus</a>
+          </div>
+          
+        </div>
+        
+        <div class="text1 fade">
+          <img src="./assets/slider3.jpg" style="width:100%; height: 45vw;filter: blur(5px);">
+          <img src="./assets/promotion1.png" id ="promotion">
+          <div id ="buton" class="text">
+            <a href="./contact.html" id ="btn">Contact Us</a>
+          </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+    </div>
+</div>
+    <div id="intro">
+        <img id="logointro" src="assets/logo.png" alt="">
+        <p>We are not only a place to drop in, we are a place where you can sit down and enjoy that tailor-made up of coffee. We have everything from classic coffee to our house made specialty beverages. All of our beans & ingredients are made in-house with no chemicals or preservatives ensuring you the highest quality in taste & health.</p>
+    </div>
+
+
+    <div id="signature">
+        <h2>Introducing <br>Our Signatures</h2>
+        <div class="sign-content">
+            <img class="sign-img" src="./assets/Egg-yolk.jpg" alt="">
+            <div class="sign-text">
+                <h3>Egg Yolk Coffee</h3>
+                <p>Vietnamese drink traditionally prepared with egg yolks,sugar, condensed milk and robusta coffee.</p>
+            </div>
+        </div>
+        <div class="sign-content1">
+            <div class="sign-text1">
+                <h3>Carrot Cake</h3>
+                <p>Soft and fluffy carrot cake with a layer of our signature cream.</p>
+            </div>
+            <img class="sign-img1" src="./assets/CarrotCake.png" alt="">
+            
+        </div>
+        <div id="btn-menu">
+            <h2><a href="./beverage.html">SEE ALL BEVERAGES</a></h2>
+            <h2><a href="./dessert.html">SEE ALL DESSERTS</a></h2>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="logofooter">
+            <img src="assets/logowithnofont.png" alt="">
+            <p>Caffein Line</p>
+        </div>
+        
+        <div id="contact">  
+            <a href="https://instagram.com"><i class="fab fa-instagram contact"></a></i>
+            <a href="https://facebook.com"><i class="fab fa-facebook contact"></a></i>
+            <a href="https://twitter.com"><i class="fab fa-twitter contact"></a></i>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

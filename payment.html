@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./style/headfoot.css">
+    <link rel="stylesheet" href="./style/payment.css">
+    <script src="https://kit.fontawesome.com/79b4ca60a2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="./script/payment.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav> 
+            <a href="./index.html"><img id="img-header" src="./assets/Logowithnofont.png" alt=""></a>
+            <ul>
+                <li><a href="#">Menu <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="./beverage.html">Beverages</a></li>
+                        <li><a href="./dessert.html">Dessert</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+</header>
+<div class="content">
+    <form action="" id="payment">
+        <h2 id="title">Payment Form</h2>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" class="line" name="form_name" id="form_name" placeholder="Input name" ></td>
+            </tr>
+                <td></td>
+                <td><div id="error-name" class="error"></div></td>              
+            <tr>
+                <td>Email</td>
+                <td><input type="text" class="line" name="form_email" id="form_email" placeholder="Input email"></td>
+                
+            </tr>
+            <td></td>
+            <td><div id="error-email" class="error"></div></td>
+            <tr>
+                <td>City</td>
+                <td><input type="text" class="line"name="form_city" id="form_city" placeholder="Input city"></td>
+                
+            </tr>
+            <td></td>
+            <td><div id="error-city" class="error"></div></td>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="form_address" id="form_address" cols="20" rows="5" placeholder="Input address"></textarea></td>
+            </tr>
+            <td></td>
+            <td><div id="error-address" class="error"></div></td>
+            <tr>
+                <td>Beverages</td>
+                <td><select name="form_beverages" id="form_beverages">
+                    <option value="none">None</option>
+                    <option value="americano">Americano</option>
+                    <option value="caffe-latte">Caffe Latte</option>
+                    <option value="caffe-mocha">Caffe Mocha</option>
+                    <option value="cappucino">Cappucino</option>
+                    <option value="cold-brew">Cold Brew Coffee</option>
+                    <option value="egg-yolk">Egg Yolk Coffee</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="frappe">Frappe</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="small">Amount</td>
+                <td><input type="text" name="amount-beverages" id="amount-beverages" class="amount"></td>
+            </tr>
+            <td></td>
+            <td><div id="error-amount-beverages" class="error"></div></td>
+            <tr>
+                <td>Desserts</td>
+                <td><select name="form_desserts" id="form_desserts">
+                    <option value="none">None</option>
+                    <option value="banana-bread">Banana Bread with Chocolate Chips</option>
+                    <option value="carrot-cake">Carrot Cake</option>
+                    <option value="chocolate-cake">Chocolate Cake</option>
+                    <option value="chocolate-molten">Chocolate Molten Lava Cake</option>
+                    <option value="donut">Donuts</option>
+                    <option value="double-chocolate">Double Chocolate Banana Bread</option>
+                    <option value="ferrero">Ferrero Rocher Brownie Cookie</option>
+                    <option value="red-velvet">Red Velvet Cake</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="small">Amount</td>
+                <td><input type="text" name="amount-desserts" id="amount-desserts" class="amount"></td>
+            </tr>
+            <td></td>
+            <td><div id="error-amount-desserts" class="error"></div></td>
+            <tr>
+                <td>Payment Method</td>
+                <td><div id="radio">
+                    <input type="radio" name="form_method" value = "visa" id="form_method_visa"> Visa
+                    <input type="radio" name="form_method" value = "paypal" id="form_method_paypal"> Paypal
+                </div>
+                    <td><div id="error-radio" class="error"></div></td>
+                    <tr>
+                        <td class="small visa">Card Number</td>
+                        <td><input type="text" name="visa_card" id="visa_card" class="line visa"></td>
+                    </tr>
+                    <td></td>
+                    <td><div id="error-card" class="error"></div></td>
+                    <tr>
+                        <td class="small visa">Validity (MM/YY)</td>
+                        <td><input type="text" name="visa_validity" id="visa_validity" class="line visa" ></td>
+                    </tr>
+                    <td></td>
+                    <td><div id="error-validity" class="error"></div></td>
+                    <tr>
+                        <td class="small visa">CVV Number</td>
+                        <td><input type="text" name="visa_cvv" id="visa_cvv" class="line visa" ></td>
+                    </tr>
+                    <td></td>
+                    <td><div id="error-cvv" class="error"></div></td>
+                </td>
+            </tr>
+            <tr>
+                <td id="agree" colspan="2">
+                    <input type="checkbox" name="form_agree" id="form_agree"> I agree with the terms and conditions
+                </td>
+            </tr>
+            <td></td>
+            <td><div id="error-agree" class="error"></div></td>
+        </table>
+        <div id="btn-input">
+            <input type="button" class="submit" onclick="fnValidate()"value="Submit">
+            <input type="reset" class="submit" onclick="fnReset()" value="Reset">
+        </div>
+        
+    </form>
+</div>  
+    
+
+    
+    <div id="footer">
+        <div id="logofooter">
+            <img src="assets/logowithnofont.png" alt="">
+            <p>Caffein Line</p>
+        </div>
+        
+        <div id="contact">
+            <a href="https://instagram.com"><i class="fab fa-instagram contact"></a></i>
+            <a href="https://facebook.com"><i class="fab fa-facebook contact"></a></i>
+            <a href="https://twitter.com"><i class="fab fa-twitter contact"></a></i>
+        </div>
+    </div>
+    
+    <script src="./script/beverage.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+#dessert{
+    padding-top: 2.5vw;
+    font-size: 1.25vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    margin: 2.5vw 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.col{
+    width: 16vw;
+    align-items: center;
+    padding: 1vw 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 7.5vw;
+}
+
+.picture{
+    width: 15vw;
+    height: 15vw;
+    box-shadow:  0.4vw 0.4vw 0.75vw rgb(230, 230, 230);
+    border-radius: 10%;
+}
+
+.col h3{
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0.75vw 0;
+    /* color: white; */
+}
+
+.col p{
+    /* color: white; */
+    font-size: 0.8vw;
+    text-align: center;
+    /* width: 12.5vw; */
+}
+
+.col :hover{
+    cursor: pointer;
+}
+
+.box :hover{
+    transition: 0.5s;
+    background-color: rgb(230, 230, 230);
+}
+
+.fa-thumbs-up{
+    margin-top: 0.5vw;
+    color: #637573;
+    font-size: 1.5vw;
+}
+
+/* .content-box h3:hover{
+    cursor: pointer;
+} */
+
+.fa-caret-down{
+    transition: 0.5s;
+}
+
+.fa-caret-down.down{
+    transform: rotate(180deg);
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#order-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+#order{
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    padding: 1vw 2vw;
+    border: 0.15vw solid #637573;
+    transition: 0.2s;
+}
+
+#order:hover{
+    color: white;
+    background-color: #637573;
+}
+
+small{
+    font-size: 0.75vw;
+    padding: 0.2vw;
+}
+#note{
+    font-size: 0.75vw;
+}
+
+@media screen and (max-width: 800px){
+    #dessert{
+        margin: 1vw;
+        font-size: 2.5vw;
+    }
+    .picture{
+       width: 20vw;
+       height: 20vw; 
+    }
+    .col{
+        width: 22vw;
+        align-items: center;
+        padding: 1vw 0;
+        display: flex;
+        flex-direction: column;
+        margin: 0 7.5vw;
+    }
+    .col h3{
+        font-size: 2vw;
+    }
+    .col p{
+        font-size: 1vw;
+    }
+    
+}
